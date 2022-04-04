@@ -2,7 +2,7 @@ import React from "react"
 
 const Review = ({ review:{name,id, description}, showButton,handleHideReview }) => {
 	return (
-		<div className="border-red-100 border-2 p-6 rounded-lg mb-5 flex flex-col items-center">
+		<div className="border-red-100 border-2 p-6 rounded-lg mb-5 flex flex-col items-center w-full">
 			<p className="text-2xl font-bold text-center">{name}</p>
 			<p className="text-justify text-sm" title={description}>
 				{description.length < 400
