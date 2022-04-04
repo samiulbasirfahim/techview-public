@@ -4,7 +4,7 @@ import Review from "../review/Review"
 
 const Reviews = () => {
 	const [fakeReview, setFakeReviews] = useState([])
-	const [reviews, setReviews] = useReviews()
+	const [reviews] = useReviews()
 	useEffect(() => {
 		setFakeReviews(reviews)
 	}, [reviews])

@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom"
 const Header = () => {
 	return (
 		<div>
-			<nav>
-				<ul className="flex justify-center items-center h-[8vh]">
+			<nav className="">
+				<ul className=" md:flex justify-center items-center h-[8vh]">
 					<li>
 						<NavLink
 							className="mx-2 px-5 font-semibold text-xl"
