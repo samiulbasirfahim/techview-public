@@ -6,9 +6,9 @@ const Header = () => {
 		<div>
 			<nav className="">
 				<ul className=" md:flex justify-center items-center h-[8vh]">
-					<li>
+					<li className="my-4">
 						<NavLink
-							className="mx-2 px-5 font-semibold text-xl"
+							className="mx-2 px-5 font-semibold text-xl  "
 							style={({ isActive }) => {
 								return isActive
 									? {
@@ -26,9 +26,9 @@ const Header = () => {
 							HOME
 						</NavLink>
 					</li>
-					<li>
+					<li className="my-4">
 						<NavLink
-							className="mx-2 px-5 font-semibold text-xl"
+							className="mx-2 px-5 font-semibold text-xl  "
 							style={({ isActive }) => {
 								return isActive
 									? {
@@ -46,9 +46,9 @@ const Header = () => {
 							REVIEWS
 						</NavLink>
 					</li>
-					<li>
+					<li className="my-4">
 						<NavLink
-							className="mx-2 px-5 font-semibold text-xl"
+							className="mx-2 px-5 font-semibold text-xl "
 							style={({ isActive }) => {
 								return isActive
 									? {
@@ -66,9 +66,9 @@ const Header = () => {
 							DASHBOARD
 						</NavLink>
 					</li>
-					<li>
+					<li className="my-4">
 						<NavLink
-							className="mx-2 px-5 font-semibold text-xl"
+							className="mx-2 px-5 font-semibold text-xl "
 							style={({ isActive }) => {
 								return isActive
 									? {
@@ -86,9 +86,9 @@ const Header = () => {
 							BLOGS
 						</NavLink>
 					</li>
-					<li>
+					<li className="my-4">
 						<NavLink
-							className="mx-2 px-5 font-semibold text-xl"
+							className="mx-2 px-5 font-semibold text-xl "
 							style={({ isActive }) => {
 								return isActive
 									? {
