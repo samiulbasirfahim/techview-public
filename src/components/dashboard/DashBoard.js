@@ -1,8 +1,6 @@
 import React from "react"
 import {
 	Area,
-	Bar,
-	BarChart,
 	CartesianGrid,
 	ComposedChart,
 	Legend,
@@ -11,14 +9,11 @@ import {
 	Pie,
 	PieChart,
 	ResponsiveContainer,
-	Text,
 	Tooltip,
 	XAxis,
 	YAxis,
 } from "recharts"
 import useData from "../../custom-hooks/useData"
-
-
 
 const DashBoard = () => {
 	const [data] = useData()
@@ -68,7 +63,7 @@ const DashBoard = () => {
 						fill="#AA77A7"
 						label="month"
 					/>
-					<Legend  />
+					<Legend />
 					<Tooltip />
 				</PieChart>
 			</ResponsiveContainer>
