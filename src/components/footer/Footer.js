@@ -1,10 +1,17 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { FaFacebook, FaTwitter, FaGithub } from "react-icons/fa"
 import { useLocation } from "react-router-dom"
 const Footer = () => {
-    const {pathname} = useLocation()
+	const {pathname} = useLocation()
+	const [hideFooter, setHideFooter] = useState(false)
+	useEffect(() => {
+		if(pathname.includes('/about') || pathname.includes('/blogs') || pathname.includes('/dashboard') || pathname.includes('/reviews') ||pathname === '/'){
+			setHideFooter(false);
+		} else {
+			setHideFooter(true);
+	}},[pathname])
 	return (
-		<div className="	 mt-24 bg-[#F8E9E5] flex flex-col items-center justify-center py-16">
+		<div className={hideFooter ? "hidden" : "mt-24 bg-[#F8E9E5] flex flex-col items-center justify-center py-16"}>
 			<div className="block md:flex">
 				<a
 					target="_blank"
