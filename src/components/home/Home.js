@@ -1,9 +1,11 @@
 import React from "react"
+import ReviewOverview from "../reviews-overview/ReviewsOverview"
 import "./home.css"
 
 const Home = () => {
 	return (
-		<div className="grid h-[90vh] home-container">
+	<div>
+			<div className="grid h-[90vh] home-container">
 			<div className="flex flex-col justify-center">
 				<p className="text-[30px] md:text-[50px] lg:text-[70px] text-center font-sans text-[#8C0E83] font-black">
 					The best laptop ever
@@ -27,6 +29,10 @@ const Home = () => {
 				/>
 			</div>
 		</div>
+		<div>
+			<ReviewOverview />
+		</div>
+	</div>
 	)
 }
 
