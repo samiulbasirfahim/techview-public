@@ -9,17 +9,29 @@ const Header = () => {
 	return (
 		<div className=" h-[8vh] w-full flex">
 			<nav className=" w-full">
-				<div className="flex justify-between w-full md:hidden">
-					<p>Tech view</p>
+				<div className="flex h-full items-center justify-between w-full md:hidden z-50">
+					<p className="text-2xl font-bold">Tech view</p>
 					{navOpen ? (
-						<AiOutlineClose onClick={() => setNavOpen(!navOpen)} />
+						<AiOutlineClose  onClick={() => setNavOpen(!navOpen)} />
 					) : (
 						<TiThMenu
 							onClick={() => setNavOpen(!navOpen)}
 						></TiThMenu>
 					)}
 				</div>
-				<ul style={navOpen ? {top: '20px'} : {}} className="absolute top-[-800px]  md:static flex flex-col md:flex-row justify-center items-center">
+				<ul
+					style={
+						navOpen
+							? {
+									top: "10vh",
+									left: "0",
+									backgroundColor: "white",
+									width: "100%",
+							  }
+							: {}
+					}
+					className="absolute left-[-800px] z-40  md:static flex flex-col md:flex-row justify-center items-center"
+				>
 					<li className="my-4">
 						<NavLink
 							className="mx-2 px-5 font-semibold text-xl  "
