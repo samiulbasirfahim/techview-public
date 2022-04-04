@@ -5,7 +5,7 @@ const Footer = () => {
 	const {pathname} = useLocation()
 	const [hideFooter, setHideFooter] = useState(false)
 	useEffect(() => {
-		if(pathname.includes('/about') || pathname.includes('/blogs') || pathname.includes('/dashboard') || pathname.includes('/reviews') ||pathname === '/'){
+		if(pathname.includes('/blogs') || pathname.includes('/dashboard') || pathname.includes('/reviews') ||pathname === '/'){
 			setHideFooter(false);
 		} else {
 			setHideFooter(true);

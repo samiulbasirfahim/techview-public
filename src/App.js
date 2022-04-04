@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom"
+import Blogs from "./components/blogs/Blogs"
 import DashBoard from "./components/dashboard/DashBoard"
 import Footer from "./components/footer/Footer"
 import Header from "./components/header/Header"
@@ -16,6 +17,7 @@ function App() {
 					<Route path="/home" element={<Home />}></Route>
 					<Route path="/reviews" element={<Reviews />}></Route>
 					<Route path="/dashboard" element={<DashBoard />}></Route>
+					<Route path="/blogs" element={<Blogs />}></Route>
 					<Route path="*" element={<NotFound></NotFound>}></Route>
 				</Routes>
 			</div>

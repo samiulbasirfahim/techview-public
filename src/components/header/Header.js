@@ -112,26 +112,6 @@ const Header = () => {
 							BLOGS
 						</NavLink>
 					</li>
-					<li className="my-4">
-						<NavLink
-							className="mx-2 px-5 font-semibold text-xl "
-							style={({ isActive }) => {
-								return isActive
-									? {
-											color: "#EE3848",
-											borderBottom: "3px solid #EE3848",
-											paddingBottom: "10px",
-									  }
-									: {
-											borderBottom: "3px solid #F8E9E5",
-											paddingBottom: "5px",
-									  }
-							}}
-							to="/about"
-						>
-							ABOUT
-						</NavLink>
-					</li>
 				</ul>
 			</nav>
 		</div>
