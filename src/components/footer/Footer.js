@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom"
 const Footer = () => {
     const {pathname} = useLocation()
 	return (
-		<div className="h-[20vh] mt-24 bg-[#F8E9E5] flex flex-col items-center justify-center py-16">
+		<div className="mt-24 bg-[#F8E9E5] flex flex-col items-center justify-center py-16">
 			<div className="block md:flex">
 				<a
 					target="_blank"
