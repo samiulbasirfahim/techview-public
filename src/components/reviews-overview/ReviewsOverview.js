@@ -14,7 +14,7 @@ const ReviewOverview = () => {
 			</p>
 			<div className="">
 				{first3ofArray.map((review) => (
-					<Review key={review.id} review={review}></Review>
+					<Review key={review.id} review={review} showButton={false} ></Review>
 				))}
 			</div>
 			<button className="bg-[#EE3848] py-2 px-6 text-xl text-white rounded-lg" onClick={() => navigate("/reviews")}>
