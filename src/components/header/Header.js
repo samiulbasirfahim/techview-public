@@ -1,11 +1,25 @@
-import React from "react"
+import React, { useState } from "react"
+import { TiThMenu } from "react-icons/ti"
+import { AiOutlineClose } from "react-icons/ai"
+
 import { NavLink } from "react-router-dom"
 
 const Header = () => {
+	const [navOpen, setNavOpen] = useState(false)
 	return (
-		<div>
-			<nav className="">
-				<ul className=" md:flex justify-center items-center h-[8vh]">
+		<div className=" h-[8vh] w-full flex">
+			<nav className=" w-full">
+				<div className="flex justify-between w-full md:hidden">
+					<p>Tech view</p>
+					{navOpen ? (
+						<AiOutlineClose onClick={() => setNavOpen(!navOpen)} />
+					) : (
+						<TiThMenu
+							onClick={() => setNavOpen(!navOpen)}
+						></TiThMenu>
+					)}
+				</div>
+				<ul style={navOpen ? {top: '20px'} : {}} className="absolute top-[-800px]  md:static flex flex-col md:flex-row justify-center items-center">
 					<li className="my-4">
 						<NavLink
 							className="mx-2 px-5 font-semibold text-xl  "
