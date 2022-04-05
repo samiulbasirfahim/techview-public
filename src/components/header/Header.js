@@ -23,14 +23,12 @@ const Header = () => {
 					style={
 						navOpen
 							? {
-									top: "10vh",
 									left: "0",
-									backgroundColor: "white",
-									width: "100%",
+									backgroundColor: "white"
 							  }
 							: {}
 					}
-					className="absolute left-[-800px] z-40  md:static flex flex-col md:flex-row justify-center items-center"
+					className="absolute left-[-800px] top-[10vh] z-40 w-full md:static flex flex-col md:flex-row justify-center items-center"
 				>
 					<li className="my-4">
 						<NavLink
