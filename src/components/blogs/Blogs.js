@@ -46,12 +46,12 @@ const Blogs = () => {
 					inline elements display in a line. They do not force the
 					text after them to a new line. An anchor (or link) is an
 					example of an inline element. You can put several links in a
-					row, and they will display in a line.such as ( a, br,
-					button, i, img)
+					row, and they will display in a line.such as ( a, small ,
+					button, img)
 					<br />A block-level element always starts on a new line and
 					takes up the full width available. An inline element does
 					not start on a new line and it only takes up as much width
-					as necessary..
+					as necessary.. example of block element (p, h1, div, br)
 				</p>
 			</div>
 		</div>
